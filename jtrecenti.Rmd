@@ -26,7 +26,7 @@ Agora, você precisará dar um nome para o projeto. Escolha um nome pequeno e se
 
 As outras opções i) te pedem pra especificar uma pasta do PC onde você colocará a pasta do seu projeto, ii) te ajudam a trabalhar com versionamento (que vamos fazer, mas não por essa opção) e iii) fazem seu projeto ser autocontido, usando o `packrat` (que não usaremos nunca). Pode clicar em OK.
 
-E... Pronto! criamos nosso projeto. Note que você criou um arquivo `meuProjeto` na aba "File" do quadrante inferior direito.
+E... Pronto! criamos nosso projeto. Note que você criou um arquivo `nomeDoProjeto.Rproj` na aba "File" do quadrante inferior direito.
 
 [2a camera em J]
 
