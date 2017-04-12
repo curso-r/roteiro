@@ -36,7 +36,7 @@ O RStudio é o Word do cientista de dados. Mas diferente das pessoas que mexem e
 
 [slide]
 
-O RStudio nos ajuda a montar nossos trabalhos dentro de pastas a partir dos Projetos. Os projetos são arquivos com extensão `.Rproj` que guardam algumas informações básicas da estrutura do projeto. O nome do arquivo `.Rproj` é igual ao nome da pasta do projeto. Se clicarmos duas vezes nesse arquivo, o RStudio já abre com as configurações do projeto. 
+O RStudio nos ajuda a montar nossos trabalhos dentro de pastas a partir dos Projetos. O projeto é um arquivo com extensão `.Rproj` que guarda configurações do projeto. Por exemplo, se carregaremos uma base de dados automaticamente ao abrir o projeto. O nome do arquivo `.Rproj` é igual ao nome da pasta do projeto. Se clicarmos duas vezes nesse arquivo, o RStudio já abre com as configurações do projeto. 
 
 [câmera em J]
 
