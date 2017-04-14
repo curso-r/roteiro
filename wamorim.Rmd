@@ -1,0 +1,30 @@
+---
+title: "Criando um projeto no RStudio"
+author: "William Amorim"
+date: "April 14, 2017"
+---
+
+[câmera em W]
+
+Neste vídeo, vamos ver como instalar o R e o RStudio na sua máquina.
+
+[tela do computador/navegador]
+
+Para instalar o R, utilize o link na descrição ou simplesmente pesquisar por R Cran no Google. Na página do CRAN, clique no link para download segundo o seu sistema operacional: Linux, Mac ou Windows.
+
+- Se você estiver usando Linux, clique na pasta da sua distribuição e siga as instruções da página seguinte.
+
+- Se você estiver usando Mac, basta seguir as instruções nessa página.
+
+- Se você estiver usando Windows, clique no subdiretório "base" e faça o download da última versão do R indicada no topo da página.
+
+Baixe o arquivo e siga as instruções para instalar o R na sua máquina. Agora, vamos agora baixar e instalar o RStudio.
+
+Mais uma vez, você pode usar o link na descrição ou pesquisar por RStudio no Google. Na página, entre outras coisas interessantes, você vai encontrar o opção para download do RStudio. Vamos baixar a versão gratuita do RStudio Desktop (cuidado para não baixar o Server sem querer). Ambas as versões, paga e gratuita, têm as mesmas funcionalidades. A diferença fica mesmo no suporte técnico. Você clicar em Download ou apenas descer a página até encontrar o link referente ao seu sistema operacional. Baixe o arquivo e siga as instruções para instalar o RStudio na sua máquina.
+
+
+[câmera em W]
+
+Se tudo ocorreu bem, você já tem o R e o RStudio instalados em seu computador. No próximo vídeo, veremos como criar um projeto no RStudio para mantermos a nossa análise bem organizada.
+
+Até lá!
