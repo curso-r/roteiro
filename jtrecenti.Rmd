@@ -6,13 +6,12 @@ date: "April 12, 2017"
 
 [câmera em J]
 
-No próximo minuto vamos criar um projeto no RStudio para começarmos os trabalhos. Vou assumir que você já conseguiu instalar o R e o RStudio na sua máquina. Se ainda não fez isso, assista o vídeo que está na descrição.
+Agora vamos criar um projeto no RStudio para começarmos os trabalhos. 
+Criamos um projeto sempre que vamos começar a fazer uma análise.
 
-Vamos criar um projeto! Pause o vídeo e abra o RStudio agora.
+Vamos então criar um projeto no RStudio.
 
 [tela do computador]
-
-No RStudio, clique no botão azul no canto superior direito e depois clique em "New Project...". 
 
 Você terá três opções: 
 
@@ -20,26 +19,40 @@ Você terá três opções:
 - **Existing directory** criará um projeto numa pasta que já existe.
 - **Version control** vai criar uma pasta puxando os dados e scripts direto da internet (veremos como isso funciona em outro vídeo).
 
-Vou selecionar "New directory". Mais opções aparecerão para você criar projetos com estruturas específicas para dashboards ou pacotes em R. Clique em "Empty project", que vai criar um projeto em branco.
+Vou selecionar "New directory". 
 
-Agora, você precisará dar um nome para o projeto. Escolha um nome pequeno e sem acentos nem espaços (veremos como pensar em nomes bacanas em outro vídeo). O meu vai se chamar `meuProjeto`, em `camelCase`.
+Mais opções aparecerão para você criar projetos com estruturas específicas para 
+dashboards ou pacotes em R. Clique em "Empty project", 
+que vai criar um projeto em branco.
 
-As outras opções i) te pedem pra especificar uma pasta do PC onde você colocará a pasta do seu projeto, ii) te ajudam a trabalhar com versionamento (que vamos fazer, mas não por essa opção) e iii) fazem seu projeto ser autocontido, usando o `packrat` (que não usaremos nunca). Pode clicar em OK.
+Agora, você precisará dar um nome para o projeto. Escolha um nome pequeno e sem 
+acentos nem espaços. O meu vai se chamar `meuProjeto`.
 
-E... Pronto! criamos nosso projeto. Note que você criou um arquivo `nomeDoProjeto.Rproj` na aba "File" do quadrante inferior direito.
+Depois do nome você irá selecionar em qual pasta você quer salvar o seu projeto.
+Não vou falar sobre as outras opções, clique em Create Project.
+
+E... Pronto! criamos nosso projeto. Note que você criou um arquivo 
+`nomeDoProjeto.Rproj` na aba "File" do quadrante inferior direito.
 
 [2a camera em J]
 
 Mas o que é um projeto e por quê precisamos dele?
 
-O RStudio é o Word do cientista de dados. Mas diferente das pessoas que mexem em Word, geralmente precisamos trabalhar em vários arquivos ao mesmo tempo (bases de dados, scripts de análise e relatórios). A melhor forma de fazer isso é guardando todos os arquivos na mesma pasta. Assim não nos perdemos nas bagunças do PC e temos maior facilidade de transferir o que fizemos para outra pessoa.
+Quando fazemos as nossas análises, geralmente, trabalhamos com vários arquivos ao 
+mesmo tempo: base da dados, scripts e relatórios. A melhor forma de se organizar,
+é guardar todos os arquivos na mesma pasta. Além da organização, uma vantagem é ter
+facilidade para transferir os seus arquivos para outra pessoa.
 
 [slide]
 
-O RStudio nos ajuda a montar nossos trabalhos dentro de pastas a partir dos Projetos. O projeto é um arquivo com extensão `.Rproj` que guarda configurações do projeto. Por exemplo, se carregaremos uma base de dados automaticamente ao abrir o projeto. O nome do arquivo `.Rproj` é igual ao nome da pasta do projeto. Se clicarmos duas vezes nesse arquivo, o RStudio já abre com as configurações do projeto. 
+O projeto do RStudio é um arquivo com extensão `.Rproj` que guarda configurações 
+do projeto, o histórico de comandos digitados e opções de controle de versão.
+O nome do arquivo `.Rproj` é igual ao nome da pasta do projeto. 
 
 [câmera em J]
 
-Agora você já sabe criar um projeto no RStudio. No próximo vídeo, veremos algumas formas inteligentes de organizar seu projeto, para que você não perca tempo na estrutura e sim na análise de dados, que é o que importa de verdade.
+Agora você já sabe criar um projeto no RStudio. No próximo vídeo, veremos algumas 
+formas de organizar seu projeto, para que você não perca tempo na 
+estrutura e sim na análise de dados, que é o que importa de verdade.
 
 Até lá!
