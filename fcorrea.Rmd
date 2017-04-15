@@ -6,30 +6,29 @@ date: "April 12, 2017"
 
 [câmera em F]
 
-Olá! Que bom te ver novamente. Na aula de hoje vamos aprender o básico para construir gráficos usando o pacote ggplot2.
+Olá! É muito bom te ver novamente. Na aula de hoje vamos aprender o básico para construir gráficos usando o pacote ggplot2. Essa discussão começa descobrindo o que é um gráfico estatístico.
 
-Vamos começar pensando pequeno: antes de tudo vamos aprender a responder "O que é um gráfico?"
+Seguindo as ideias propostas por hadley wickham e leland wilkinson, vamos pensar que um gráfico é uma relação entre três elementos. Entender essa forma de pensar é o fundamento para entender ggplot: o pacote só transforma esse esquema em um código de computador.
 
-Seguindo as ideias propostas por hadley wickham e leland wilkinson, vamos pensar que um gráfico é uma relação entre
+O primeiro elemento consiste nas informações de uma bases de dados
 
-[computador]
+[mostra uma tabela 6x4 em LaTex com duas colunas numéricas e duas colunas qualitativas]
 
-- As informações de uma base de dados [mostra uma tabela 6x4 em LaTex com duas colunas numéricas e duas colunas qualitativas]
-    - variáveis, que na verdade são as colunas do seu banco de dados [aparece um retângulo vermelho ao redor das duas primeiras variáveis]
-    - resumos, como médias e medianas [aparece uma seta saindo da última coluna da tabela apontando pra média da última coluna]
-- os parâmetros estéticos do gráfico, [troca slide. esse slide tem um gráfico em que o x e o y são as colunas numéricas e as cores e os formatos são as colunas qualitativas] como
-    - eixos
-    - cores 
-    - formatos
-- Anotações [novo slide adicionando pedaços ao gráfico anterior]
-    - títulos
-    - legendas
-    - cores
-    - formas geométricas
-    
-Entender essa forma de pensar é quase igual a entender ggplot: o pacote só transforma esse esquema em um código de computador. [slide com o código que gera o gráfico do slide anterior]
+como as suas variáveis,
 
-o esqueleto do gráfico é construído através de uma chamada da função ggplot2. os parâmetros são
+[aparece um retângulo vermelho ao redor das duas primeiras variáveis]
+
+e resumos dos seus dados, como médias e medianas.
+
+[aparece uma seta saindo da última coluna da tabela apontando pra média da última coluna]
+
+O segundo elemento consiste nos parâmetros estéticos do gráfico,
+
+[troca slide. esse slide tem um gráfico em que o x e o y são as colunas numéricas e as cores e os formatos são as colunas qualitativas] como eixos, cores e formatos.
+
+O terceiro e último elemento são anotações finais [novo slide adicionando pedaços ao gráfico anterior], com títulos, legendas e formas geométricas.
+
+Deixando a teoria de lado, podemos aprender como esses conceitos se aplicam no Resqueleto do gráfico é construído através de uma chamada da função ggplot2. os parâmetros são
 
 - a base de dados
 - o mapemento com a função aes

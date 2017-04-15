@@ -1,0 +1,190 @@
+---
+title: "gráficos em ggplot2: o básico"
+author: "Fernando Corrêa"
+date: "15 de abril de 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+library(ggplot2)
+```
+
+## Elementos de um grafico: dados
+
+```{r}
+tabela <- tibble::tribble(~`Coluna 1`,~`Coluna 2`,~`Classe 1`,~`Classe 2`,
+                          3.4, 4.3, 'azul', 'circulo',
+                          1.3, 1.5, 'azul', 'circulo',
+                          6.5, 7.2, 'vermelho', 'retangulo',
+                          4.2, 2.8, 'vermelho', 'retangulo')
+
+knitr::kable(tabela, format = 'pandoc')
+```
+
+## Elementos de um grafico: dados
+
+```{r}
+tabela <- tibble::tribble(~`Coluna 1`,~`Coluna 2`,~`Classe 1`,~`Classe 2`,
+                          3.4, 4.3, 'azul', 'circulo',
+                          1.3, 1.5, 'azul', 'circulo',
+                          6.5, 7.2, 'vermelho', 'retangulo',
+                          4.2, 2.8, 'vermelho', 'retangulo')
+
+tabela_resumo <- tabela[,1:2] %>% 
+  summarise_all(funs(mean(.))) %>% 
+  setNames(c("Média da Coluna 1", "Média da Coluna 2"))
+
+knitr::kable(tabela, format = 'pandoc')
+```
+
+<br>
+
+```{r}
+knitr::kable(tabela_resumo, format = 'markdown')
+```
+
+## Elementos de um gráfico: elementos estéticos
+
+```{r}
+tabela %>% 
+  ggplot(aes(x = `Coluna 1`, y = `Coluna 2`)) +
+  #geom_point(size = 4) + 
+  theme_bw(15) +
+  xlab('') +
+  ylab('') +
+  theme(legend.position = 'none')
+```
+
+## Elementos de um gráfico: elementos estéticos - eixos
+
+```{r}
+tabela %>% 
+  ggplot(aes(x = `Coluna 1`, y = `Coluna 2`)) +
+  geom_point(size = 4) + 
+  theme_bw(15) +
+  theme(legend.position = 'none')
+```
+
+## Elementos de um gráfico: elementos estéticos - cores
+
+```{r}
+tabela %>% 
+  ggplot(aes(x = `Coluna 1`, y = `Coluna 2`, color = `Classe 1`)) +
+  geom_point(size = 4) + 
+  theme_bw(15) +
+  theme(legend.position = 'none')
+```
+
+## Elementos de um gráfico: elementos estéticos - formatos
+
+```{r}
+tabela %>% 
+  ggplot(aes(x = `Coluna 1`, y = `Coluna 2`, color = `Classe 1`, shape = `Classe 2`)) +
+  geom_point(size = 4) + 
+  theme_bw(15) +
+  theme(legend.position = 'none')
+```
+
+## Elementos de um gráfico: anotações
+
+```{r}
+tabela %>% 
+  ggplot(aes(x = `Coluna 1`, y = `Coluna 2`, color = `Classe 1`, shape = `Classe 2`)) +
+  geom_point(size = 4) + 
+  theme_bw(15) +
+  ggtitle("Um Lindo Gráfico")
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = T, eval = F}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`))
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = F}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`))
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = T, eval = F}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`)) +
+  geom_point(size = 4)
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = F, eval = T}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`)) +
+  geom_point(size = 4)
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = T, eval = F}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`)) +
+  geom_point(size = 4) +
+  theme_bw(15)
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = F, eval = T}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`)) +
+  geom_point(size = 4) +
+  theme_bw(15)
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = T, eval = F}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`)) +
+  geom_point(size = 4) +
+  theme_bw(15) +
+  ggtitle("Um Lindo Gráfico")
+```
+
+## Gramática de gráficos e R
+
+```{r, echo = F, eval = T}
+ggplot(tabela,
+       aes(x = `Coluna 1`,
+           y = `Coluna 2`,
+           color = `Classe 1`,
+           shape = `Classe 2`)) +
+  geom_point(size = 4) +
+  theme_bw(15) +
+  ggtitle("Um Lindo Gráfico")
+```
