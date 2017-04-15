@@ -10,7 +10,7 @@ Olá! É muito bom te ver novamente. Na aula de hoje vamos aprender o básico pa
 
 Seguindo as ideias propostas por hadley wickham e leland wilkinson, vamos pensar que um gráfico é uma relação entre três elementos. Entender essa forma de pensar é o fundamento para entender ggplot: o pacote só transforma esse esquema em um código de computador.
 
-O primeiro elemento consiste nas informações de uma bases de dados
+O primeiro elemento de um gráfico consiste nas informações de uma bases de dados
 
 [mostra uma tabela 6x4 em LaTex com duas colunas numéricas e duas colunas qualitativas]
 
@@ -26,9 +26,9 @@ O segundo elemento consiste nos parâmetros estéticos do gráfico,
 
 [troca slide. esse slide tem um gráfico em que o x e o y são as colunas numéricas e as cores e os formatos são as colunas qualitativas] como eixos, cores e formatos.
 
-O terceiro e último elemento são anotações finais [novo slide adicionando pedaços ao gráfico anterior], com títulos, legendas e formas geométricas.
+O terceiro e último elemento são as anotações finais [novo slide adicionando pedaços ao gráfico anterior], como títulos, legendas e formas geométricas.
 
-Deixando a teoria de lado, podemos aprender como esses conceitos se aplicam no Resqueleto do gráfico é construído através de uma chamada da função ggplot2. os parâmetros são
+Deixando a teoria de lado, podemos aprender como esses conceitos se aplicam no esqueleto do gráfico é construído através de uma chamada da função ggplot2. os parâmetros são
 
 - a base de dados
 - o mapemento com a função aes
